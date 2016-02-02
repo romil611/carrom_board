@@ -1,0 +1,34 @@
+CARROM v1.0
+GRAPHICS ASSIGNMENT1
+ROMIL AGGARWAL 201330112
+
+Carrom v1.0 is intended to be a simple single player game made primarily made using
+openGL, GLUT and C++11 technologies.					
+
+How to Play
+To play the game
+1. Using Keyboard. ’a’ and ’c’ - rotate striker, ’up’ and ’down’ to change power, ’left’ and
+’right’ to position the striker, ’spacebar’ to shoot.
+2. Using mouse, Drag striker using right button and hold left mouse button to aim and release
+to shoot
+3. pressing 'r' would set all the coins and striker as they should be after they stopped after colliding.
+
+
+
+You need to pocket the gray coins and blue coin in the given time limit initially 30 seconds.
+
+You lose 5 seconds for pocketing the grey ones and the striker. You gain 10 seconds by pocketing
+blue coins and 50 seconds by pocketing the red one.
+The striker will reset if you pocket it or it slows down. But the other coins need not be static.
+The timer will be halted while a shoot is in progress. Be aware that the coins may hit your striker
+and cause you to unable to shoot.The pocketed coins stack outside the board.
+
+Programming Approarch
+I have used a Object Oriented Programming Paradigm. The Coin and Striker classes contain 
+attributes and functions on how to operate on them like draw them, move them etc. Function
+Overloading and C++ templating has been used where necessary. 
+
+The Board class holds the game logic, attributes and board drawing elements.
+
+The header files contain the various declarations of the classes and specifically 'constants.h’
+contains all the global game parameters which can be changed easily.
